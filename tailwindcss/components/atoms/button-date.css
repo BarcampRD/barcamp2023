@@ -1,0 +1,5 @@
+.button-date {
+  @apply w-16 h-16 rounded-full border border-primary-50 flex items-center justify-center bg-base-white text-primary-50 text-body-1 font-graphie-bold hover:bg-[#e4e8fc] cursor-pointer flex-none;
+
+  &.active { @apply border-secondary-50 bg-[#f8dcfc] text-secondary-50; }
+}

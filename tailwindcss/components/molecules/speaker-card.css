@@ -1,0 +1,33 @@
+@layer components {
+  .speaker-card {
+    @apply rounded-lg overflow-hidden w-full h-[304px] block relative cursor-pointer;
+
+    .speaker-image {
+      @apply w-full h-full absolute;
+      img { @apply w-full h-full object-cover object-center; }
+    }
+
+    .speaker-information {
+      @apply bg-primary-50 bg-opacity-20 p-4 z-10 absolute bottom-0 backdrop-blur-md border-t border-primary-70 border-opacity-[0.67];
+
+      h5,p,ul { @apply text-base-white text-center; }
+      h5 { @apply mb-2 font-graphie-semibold; }
+      p { @apply text-body-2 mb-4 font-noto-sans; }
+      ul { 
+        @apply flex items-center justify-center text-heading-3-md leading-none;
+
+        li { 
+          @apply mr-6;
+          a { @apply block cursor-pointer; }
+        }
+        li:last-child { @apply mr-0; }
+      }
+    }
+
+    &:hover {
+      .speaker-information {
+        @apply bg-primary-70 bg-opacity-60;
+      }
+    }
+  }
+}

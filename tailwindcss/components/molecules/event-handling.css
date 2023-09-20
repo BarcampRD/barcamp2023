@@ -1,0 +1,8 @@
+.event-handling {
+  @apply flex items-center relative xl:overflow-auto overflow-x-scroll;
+
+  @apply before:xl:w-[98%] before:md:w-[1024px] before:w-[764px] before:h-1 before:bg-secondary-70 before:absolute before:top-[30px];
+
+  .button-date { @apply md:mr-16 mr-6 relative z-10; }
+  .button-date:last-child { @apply mr-0; }
+}

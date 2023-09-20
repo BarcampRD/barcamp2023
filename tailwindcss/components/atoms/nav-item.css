@@ -1,0 +1,6 @@
+.nav-item {
+  @apply xl:p-4 p-2 font-semibold font-graphie-semibold rounded-lg xl:text-body-1 text-body-2 inline-flex;
+
+  &-primary { @apply text-primary-70 bg-base-transparent hover:bg-primary-10; }
+  &-secondary { @apply text-base-white bg-base-transparent hover:bg-base-white hover:bg-opacity-30; }
+}

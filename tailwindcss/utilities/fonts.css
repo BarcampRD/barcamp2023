@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+@font-face {
+  font-family: 'graphie-bold';
+  src: url('../fonts/graphie-bold-webfont.eot');
+  src: url('../fonts/graphie-bold-webfont.woff2') format('woff2'),
+	url('../fonts/graphie-bold-webfont.woff2') format('woff'),
+  url('../fonts/graphie-bold-webfont.ttf') format('truetype'),
+	url('../fonts/graphie-bold-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'graphie-semibold';
+  src: url('../fonts/graphie-semibold-webfont.eot');
+  src: url('../fonts/graphie-semibold-webfont.woff2') format('woff2'),
+	url('../fonts/graphie-semibold-webfont.woff2') format('woff'),
+  url('../fonts/graphie-semibold-webfont.ttf') format('truetype'),
+	url('../fonts/graphie-semibold-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'graphie-regular';
+  src: url('../fonts/graphie-regular-webfont.eot');
+  src: url('../fonts/graphie-regular-webfont.woff2') format('woff2'),
+	url('../fonts/graphie-regular-webfont.woff2') format('woff'),
+  url('../fonts/graphie-regular-webfont.ttf') format('truetype'),
+	url('../fonts/graphie-regular-webfont.svg') format('svg');
+}

@@ -1,0 +1,30 @@
+@layer base {
+  
+  /* h1,h2,h3,h4,.hero { 
+    @apply font-display;
+  } */
+
+  .hero { 
+    @apply text-hero-sm md:text-hero-md lg:text-hero-lg; 
+  }
+  
+  h1 { 
+    @apply text-heading-1-md lg:text-heading-1-lg;
+  }
+
+  h2 { 
+    @apply text-heading-2-md lg:text-heading-2-lg;
+  }
+
+  h3 { 
+    @apply text-heading-3-md lg:text-heading-3-lg;  
+  }
+
+  h4 {
+    @apply text-heading-4-md lg:text-heading-4-lg; 
+  }
+
+  h5 {
+    @apply text-heading-5-md lg:text-heading-5-lg; 
+  }
+}

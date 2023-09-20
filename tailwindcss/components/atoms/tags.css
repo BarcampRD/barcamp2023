@@ -1,0 +1,13 @@
+@layer components {
+  .tag {
+    @apply px-4 rounded-lg h-8 text-center font-graphie-regular text-body-1 inline-flex items-center justify-center cursor-default;
+
+    /* Categories */
+    &.default { @apply bg-[#ffffff33] text-base-white h-10; }
+    &.host { @apply bg-primary-10 text-primary-50; }
+    &.software { @apply bg-[#15ee8f33] text-tertiary-70; }
+    &.networks { @apply bg-[#b123ec1a] text-secondary-70; }
+    &.security { @apply bg-[#ecb4231a] text-[#D59F16]; }
+    &.games { @apply bg-[#da00341a] text-base-red; }
+    }
+}

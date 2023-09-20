@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Icono-21.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/537d56416d.js" crossorigin="anonymous"></script>
+    <title>Barcamp RD 2023</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="./img/Text-Simple.png" style="max-height: 100px; object-fit: cover;" alt="Barcamp 2023">
+            <img src="./img/Simple-Text.png" alt="Barcamp 2023">
+        </figure>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#hero" class="nav-item nav-item-secondary">Inicio</a></li>
+                <li><a href="#about" class="nav-item nav-item-secondary">Acerca de</a></li>
+                <li><a href="#unconferences" class="nav-item nav-item-secondary">Desconferencias</a></li>
+                <li><a href="#speakers" class="nav-item nav-item-secondary">Charlistas</a></li>
+                <li><a href="#sponsors" class="nav-item nav-item-secondary">Patrocinadores</a></li>
+                <li><a href="javascript:;" class="nav-item nav-item-secondary conduct-button">Código de conducta</a></li>
+                <li><a target="_blank" href="https://webapp-st.pucmm.edu.do/RegistroEvento/EditInscripcionEvento.aspx?id=48" class="btn btn-solid-secondary btn-large sign-in">¡Regístrate!</a></li>
+            </ul>
+        </nav>
+        <!-- Toggle main menu button -->
+        <button class="btn-icon btn-solid-secondary btn-xsmall" id="openMenu">
+      <i class="icon-less"></i>
+    </button>
+    </header>
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="container m-auto relative z-10">
+                <h1 style="font-size: 2rem; font-weight: bold; text-align: center;" ><span style="color: #ba1513;">C</span>ÓDIGO, <span style="color: #ba1513;">C</span>ONEXIÓN <span style="color: #ba1513;">C</span>OMUNIDAD</h1>
+                <div class="flex justify-center">
+                    <img src="/img/LogoDarkMode.png" style="width: 50%; object-fit: cover; margin: 2rem;">
+                    <div style="margin-top: 5rem; width: 50%;">
+                        <p style="font-size: 2rem;" class="font-bold" >VIVE LA EXPERIENCIA <br> BARCAMP 2023</p>
+                        <a style="margin-top: 0.8rem; width: 12rem;" class="btn btn-large sign-in btn-solid-secondary" >REGISTRATE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section" id="about">
+            <div class="container md:mb-[70px] mb-8">
+                <h2 class="text-primary-100 font-graphie-bold mb-8">Acerca de</h2>
+                <div class="md:grid grid-cols-12 gap-x-16">
+                    <div class="col-span-6 md:mb-0 mb-6">
+                        <div class="h-full bg-base-white rounded-lg py-8 px-10" style="box-shadow: 6px 6px 8px 4px rgba(0, 0, 0, 0.2);">
+                            <h4 class="font-graphie-bold text-primary-70 mb-6 md:text-left text-center">¿Qué es BarCamp?</h4>
+                            <p class="text-neutral-50 text-heading-5-md lg:text-heading-5-lg md:text-left text-center font-graphie-regular">
+                                Es una red internacional de "desconferencias" tecnológicas, cuyo contenido es auto-generado por los participantes y su orientación es hacia el desarrollo de Software y tecnología en general.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-6">
+                        <div class="h-full bg-base-white rounded-lg py-8 px-10" style="box-shadow: 6px 6px 8px 4px rgba(0, 0, 0, 0.2);">
+                            <h4 class="font-graphie-bold text-primary-70 mb-6 md:text-left text-center">¿Quién puede participar?</h4>
+                            <p class="text-neutral-50 text-heading-5-md lg:text-heading-5-lg md:text-left text-center font-graphie-regular">
+                                Cualquier desarrollador de software, profesores y estudiantes de distintas universidades pueden participar. ¡El único requerimiento es tener ganas de aprender más!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-content">
+                <div class="container">
+                    <div class="md:grid grid-cols-3 lg:gap-x-16">
+                        <div class="md:mb-0 mb-4 h-full flex items-center text-base-white md:border-r border-base-white">
+                            <img src="/img/Two-Person.png" style="object-fit: cover; width: 3.8rem;" >
+                            <p class="text-body-1 ml-6 font-noto-sans font-bold">
+                                <span class="text-heading-4-md lg:text-heading-4-lg font-graphie-bold">275+</span><br> Personas por evento
+                            </p>
+                        </div>
+                        <div class="lg:pr-16 md:px-5 md:mb-0 mb-4 h-ful flex items-center text-base-white md:border-r border-base-white">
+                            <img src="/img/Group-Person.png" style="object-fit: cover; width: 3.8rem;">
+                            <p class="text-body-1 ml-6 font-noto-sans font-bold">
+                                <span class="text-heading-4-md lg:text-heading-4-lg font-graphie-bold">25+</span><br> Desconferencias Simultáneas
+                            </p>
+                        </div>
+                        <div class="lg:p-0 md:pl-5 h-full flex items-center text-base-white">
+                            <img src="/img/Folder-Marked.png" style="object-fit: cover; width: 3.8rem;">
+                            <p class="text-body-1 ml-6 font-noto-sans font-bold">
+                                <span class="text-heading-4-md lg:text-heading-4-lg font-graphie-bold">10</span><br> Ediciones Completadas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events-section" id="events">
+            <div class="container">
+                <h2 class="text-primary-100 font-bold mb-8">UN VISTAZO AL BARCAMP</h2>
+                <div class="carrousel flex ">
+                    <i class="fas fa-chevron-left flecha" id="fLeft" ></i>
+                    <nav class="event-handling" id="carrousel" style="overflow-x: hidden;">
+                        <a href="#year2022" id="#year2022" class="button-date active">2022</a>
+                        <a href="#year2021" id="#year2021" class="button-date">2021</a>
+                        <a href="#year2020" id="#year2020" class="button-date">2020</a>
+                        <a href="#year2019" id="#year2019" class="button-date">2019</a>
+                        <a href="#year2018" id="#year2018" class="button-date">2018</a>
+                        <a href="#year2017" id="#year2017" class="button-date">2017</a>
+                        <a href="#year2016" id="#year2016" class="button-date">2016</a>
+                        <a href="#year2015" id="#year2015" class="button-date">2015</a>
+                        <a href="#year2014" id="#year2014" class="button-date">2014</a>
+                        <a href="#year2013" id="#year2013" class="button-date" style="margin-right: 0;">2013</a>
+                    </nav>
+                    <i class="fas fa-chevron-right flecha" id="fRight"></i>
+                </div>
+                <div class="tabs-image-container">
+                    <div class="tab-content open" id="year2022">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2022/20221126_095815.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2022/20221126_105246.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2022/20221126_120313.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2022/IMG_20221126_150620.jpg" alt="Barcamp">
+                        </figure>
+
+                    </div>
+                    <div class="tab-content" id="year2021">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/1.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/2.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/3.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/4.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/5.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/6.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2021/7.jpg" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2020">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2020/1.jpg" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2019">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/1.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/2.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/3.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/4.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/5.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/6.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2019/7.jpg" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2018">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/1.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/2.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/3.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/4.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/5.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/6.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2018/7.jpg" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2017">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/1.JPG" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/2.JPG" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/3.JPG" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/4.JPG" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/5.JPG" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/6.JPG" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2017/7.JPG" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2016">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/1.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/2.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/3.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/4.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/5.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/6.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2016/7.jpg" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2015">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/1.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/2.jpeg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/3.jpeg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/4.jpg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/5.jpeg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/6.jpeg" alt="Barcamp">
+                        </figure>
+                        <figure class="tab-content-image">
+                            <img src="./img/events/2015/7.jpeg" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2013">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/placeholder.png" alt="Barcamp">
+                        </figure>
+                    </div>
+                    <div class="tab-content" id="year2014">
+                        <figure class="tab-content-image">
+                            <img src="./img/events/placeholder.png" alt="Barcamp">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="unconferences-section" id="unconferences">
+            <div class="container">
+                <h2 class="text-primary-100 font-bold md:mb-12 mb-8 font-graphie-bold">Desconferencias</h2>
+                <nav class="tabs-handling">
+                    <a data-filter="*" class="tab active">All</a>
+                    <!-- <a data-filter=".software" class="tab">Software</a>
+                    <a data-filter=".games" class="tab">Desarrollo de videojuegos</a>
+                    <a data-filter=".networks" class="tab">Redes</a>
+                    <a data-filter=".security" class="tab">Seguridad</a> -->
+                </nav>
+                <div class="tab-unconferences-container">
+                    <article class="uncoferences-card software">
+                        <time>Próximamente</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Próximamente</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Próximamente</span>
+                                <span class="tag software">Próximamente</span>
+                                <span class="tag software">Próximamente</span>
+                                <span class="tag software">Próximamente</span>
+                                <span class="tag software">Próximamente</span>
+                            </div>
+                            <p>La tecnología avanza a pasos agigantados y la industria del desarrollo, está a punto de presenciar una transformación sin precedentes con la llegada de herramientas innovadoras que potenciarán la creatividad y eficiencia de los profesionales. Sé parte de estas próximas desconferencias.  ¡Te esperamos! </p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #</a>
+                        </div>
+
+                    </article>
+                    <!--
+                    <article class="uncoferences-card software">
+                        <time>10:00 AM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Privacidad, la mejor amiga de los desarrolladores</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Wendy Cruz Feliz</span>
+                                <span class="tag software">Desarrollo seguro</span>
+                                <span class="tag software">Privacidad por defecto</span>
+                                <span class="tag software">Privacidad por diseño</span>
+                            </div>
+                            <p>¿Conoces los derechos de los Titulares de Datos Personales? Te muestro cómo mejorar tus prácticas de desarrollo aplicando privacidad por defecto y diseño para cumplir con las regulaciones locales e internacionales sobre Privacidad
+                                y Protección de Datos Personales.</p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #2</a>
+                        </div>
+
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>11:00 AM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Fostering a Sustainable Mobile App</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Mitra Mejia</span>
+                                <span class="tag software">React Native</span>
+                          </div>
+                            <p>
+                                ¡Lo has logrado! En un par de años, haz lanzado con éxito una aplicación móvil con react native. Ahora tienes cientos de miles de usuarios. Pero tu código no aguanta tus nuevos usuarios.
+                                <br> Errores causan incidentes que rompen tu aplicación, los ingenieros tienen miedo de realizar implementaciones y están apagando fuegos todas las semanas.
+                                <br> Este escenario es una receta para el estrés y el desgaste. ¿Cómo podemos superar esto? 
+                                <br>En esta charla, exploraremos formas de fomentar una cultura sostenible. Describiremos cómo mi equipo pasó de múltiples incidentes por mes a casi cero por año en nuestra app móvil.	
+
+                            </p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #1</a>
+                        </div>
+
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>11:00 AM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Simplifying Kubernetes Ingress using YARP</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Yhorby Matias</span>
+                                <span class="tag software">DevOps</span>
+                                <span class="tag software">Desarrollo Basado en Plataformas</span>
+                            </div>
+                            <p></p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #2</a>
+                        </div>
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>2:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Mastering Mobile Development</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Sebastián Pérez</span>
+                                <span class="tag software">desarrollo mobile</span>
+                                <span class="tag software">react native</span>
+                                <span class="tag software">typescript</span>
+                            </div>
+                            <p>Básicamente es un conjunto de herramientas que estarán relacionadas al desarrollo de mobile, partiendo de la implementación de la experiencia en el desarrollo. Muchos de los tools serán relacionados con Debbuging, Logging,
+                                Reporting, Performance leaks, Componentes, etc. </p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #1</a>
+                        </div>
+
+                    </article>
+                    <article class="uncoferences-card games">
+                        <time>2:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Videogame development with Unity, C# and Blender</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Raldy de Jesus De Oleo</span>
+                                <span class="tag software">C#</span>
+                                <span class="tag software">Unity</span>
+                                <span class="tag software">Blender</span>
+                                <span class="tag software">AR</span>
+                                <span class="tag software">VR</span>
+                            </div>
+                            <p>Aprende rápidamente cómo incursionar en el desarrollo de videojuegos aprovechando tus habilidades en c# y el poder de Unity más Modelado 3D con Blender. Construcción rápida de un videojuego o aplicación multiplataforma móvil,
+                                AR/VR o PC </p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #2</a>
+                        </div>
+
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>3:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Benefits of Being a "Real" Polyglot Programmer</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Lorenzo Solano Martínez</span>
+                                <span class="tag software">Software Architecture</span>
+                                <span class="tag software">Software Design</span>
+                                <span class="tag software">Maintainability</span>
+                                <span class="tag software">Career Path</span>
+                            </div>
+                            <p>Los desarrolladores de software que dominan múltiples lenguajes de programación tienen más y mejores oportunidades laborales. Tienen más opciones al cambiar de trabajo. ¿Necesita más motivación? Tendrá más herramientas mentales
+                                para abordar problemas difíciles, no están encerrados en paradigmas o soluciones comunes en un stack.</p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #1</a>
+                        </div>
+
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>3:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>¿Data-WHAT?: What does it mean to be a data-driven individual?</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Tatiana Montilla</span>
+                                <span class="tag software">Gestión de la Información</span>
+                                <span class="tag software">Datos</span>
+                                <span class="tag software">Sistemas Inteligentes</span>
+                            </div>
+                            <p>Ya tienen listo el personal de datos, la estructura a utilizar, las tecnologías, los modelos predictivos, hasta un incríble dashboard en Power BI para responder las preguntas del negocio ¿es esto suficiente para una empresa
+                                ser data-driven? ¿es suficiente para que tú seas un data-driven individual?</p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #2</a>
+                        </div>
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>4:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Agile testing like a pro</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Ever Miguel Curiel</span>
+                                <span class="tag software">SQA</span>
+                                <span class="tag software">Agilismo</span>
+                                <span class="tag software">Agile Testing</span>
+                                <span class="tag software">Software Testing</span>
+                                <span class="tag software">Lean Test plan</span>
+                            </div>
+                            <p>En teoría casi todos saben lo que es Testing ágil, pero en la práctica, muy pocos saben implementarlo. En esta charla les comparto los valores, estrategias, el mindset y las herramientas de planificación que hará que te conviertas
+                                en un héroe del Agilismo en el mundo de SQA.</p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #1</a>
+                        </div>
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>4:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Why you need to learn Flutter Web?</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">Noe Branagan</span>
+                                <span class="tag software">Flutter</span>
+                                <span class="tag software">Android</span>
+                                <span class="tag software">iOS</span>
+                                <span class="tag software">Web</span>
+                                <span class="tag software">Mobile</span>
+                            </div>
+                            <p>La idea de esta charla es ir más allá de la introducción y brindar a las personas una idea clara de cómo y cuándo debe usar Flutter web. </p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Sala #2</a>
+                        </div>
+                    </article>
+                    <article class="uncoferences-card software">
+                        <time>5:00 PM</time>
+                        <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
+                            <h4>Panel de Cierre</h4>
+                            <div class="flex mb-2 flex-wrap gap-2">
+                                <span class="tag host">EICT</span>
+                                <span class="tag software">PUCMM</span>
+                                <span class="tag software">Barcamp</span>
+                                <span class="tag software">2020</span>
+                                <span class="tag software">10 Años</span>
+                            </div>
+                            <p>TBA</p>
+                        </div>
+                        <div class="lg:pl-8 lg:mt-0 mt-4">
+                            <a class="btn btn-outline-primary btn-large">Teatro Universitario</a>
+                        </div>
+                    </article>-->
+                </div>
+                <!-- <div class="flex items-center md:flex-row flex-col">
+                    <nav class="pagination">
+                        <a class="btn-icon btn-outline-primary btn-small"><i class="icon-arrow-left"></i></a>
+                        <a class="btn-icon btn-outline-primary btn-small active">1</a>
+                        <a class="btn-icon btn-outline-primary btn-small">2</a>
+                        <a class="btn-icon btn-outline-primary btn-small">3</a>
+                        <a class="btn-icon btn-outline-primary btn-small"><i class="icon-arrow-right"></i></a>
+                    </nav>
+                    <p class="text-body-2 text-neutral-50 font-normal font-noto-sans md:ml-6 md:mt-0 mt-4">Muestra 1- 5 de 15</p>
+                </div> -->
+            </div>
+        </section>
+        <section class="speakers-section" id="speakers">
+            <div class="container">
+                <h2 class="text-primary-100 font-bold md:mb-10 mb-8 font-graphie-bold">Charlistas</h2>
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-8">
+                    <div id="speaker-0" class="speaker-card">
+                        <figure class="speaker-image">
+                            <img src="./img/loanding.jpg" alt="Dulce">
+                        </figure>
+                        <div class="speaker-information">
+                            <h5>Próximamente</h5>
+                            <p>Próximamente</p>
+                            <ul class="speaker-contact">
+                                <li><a><i class="icon-youtube"></i></a></li>
+                                <li><a><i class="icon-twitter"></i></a></li>
+                                <li><a><i class="icon-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="location-section">
+            <div class="container">
+                <h2 class="text-primary-100 font-bold font-graphie-bold md:mb-10 mb-8">Ubícanos</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3070984555106!2d-70.68684148398134!3d19.442321986878877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cf6f0a95c9f9%3A0x77ca6ffcce6b71a3!2sEdificio%20Padre%20Arroyo!5e0!3m2!1ses!2sdo!4v1666205630950!5m2!1ses!2sdo"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="sponsors-section" id="sponsors">
+            <div class="container">
+                <h2 class="text-primary-100 font-bold font-graphie-bold md:mb-10 mb-8">Patrocinadores</h2>
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-col-1">
+                   <!-- <figure>
+                        <img src="./img/sponsors/avathar.png" alt="Avanthar">
+                    </figure>-->
+
+                    <!--
+                    <figure>
+                        <img src="./img/sponsors/kation.png" alt="Kation Interative">
+                    </figure>-->
+                    <figure>
+                        <img src="./img/sponsors/pucmm.png" alt="PUCMM">
+                    </figure>
+                    <figure>
+                        <img src="./img/sponsors/cicc.png" alt="Comité Estudiantes ICC">
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container lg:flex justify-between items-center">
+            <figure>
+                <img src="./img/Text-Simple.png"  style="max-height: 75px;" alt="Barcamp" class="lg:m-0 mx-auto mb-4">
+            </figure>
+            <nav class="lg:block flex md:flex-row flex-col justify-center md:items-start items-center">
+                <a href="#hero" class="nav-item nav-item-secondary">Inicio</a>
+                <a href="#about" class="nav-item nav-item-secondary">Acerca de</a>
+                <a href="#unconferences" class="nav-item nav-item-secondary">Desconferencias</a>
+                <a href="#speakers" class="nav-item nav-item-secondary">Charlistas</a>
+                <a href="#sponsors" class="nav-item nav-item-secondary">Patrocinadores</a>
+                <a href="#!" class="nav-item nav-item-secondary conduct-button">Código de conducta</a>
+            </nav>
+        </div>
+        <hr class="border-secondary-80 md:my-10 my-8">
+        <div class="container flex justify-between items-center md:flex-row flex-col">
+            <div class="col-lg-2 col-md-4">
+                <a href="https://2022.barcamp.org.do/" target="_blank" class="nav-item nav-item-secondary">Ir al evento del 2022</a>
+            </div>
+            <p class="text-body-2 text-[#A0A0A0] md:mb-0 mb-4 md:text-left text-center font-noto-sans">Copyright © 2022 CISC PUCMM | Website by <b class="text-[#FF7B47]">KATIÓN INTERACTIVE</b></p>
+            <nav>
+                <a href="https://instagram.com/barcamprd" target="_blank" class="text-heading-2-lg leading-none text-base-white mr-4"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com/barcamprd" target="_blank" class="text-heading-2-lg leading-none text-base-white mr-4"><i class="icon-facebook"></i></a>
+                <a href="https://twitter.com/BarCampRD" target="_blank" class="text-heading-2-lg leading-none text-base-white mr-4"><i class="icon-twitter"></i></a>
+                <a href="https://github.com/BarcampRD/" target="_blank" class="text-heading-2-lg leading-none text-base-white"><i class="icon-github"></i></a>
+            </nav>
+        </div>
+    </footer>
+    <!-- Modals -->
+    <!-- <div class="modal sign-in-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Formulario</h4>
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                        <div class="form-group">
+                            <label>Nombre Completo</label>
+                            <input type="text" class="form-control form-control form-control-small" placeholder="Nombre y apellido">
+                        </div>
+                        <div class="form-group">
+                            <label>Cedula</label>
+                            <input type="text" class="form-control form-control-small" placeholder="0-000000000-0">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control form-control form-control-small" placeholder="Ejemplo1000@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Movil</label>
+                            <input type="text" class="form-control form-control-small" placeholder="(809) 888 9999">
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-8">
+                        <button type="submit" class="btn btn-solid-primary btn-large mx-auto">¡Regístrate!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal confirmation-message-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body flex items-center">
+                <figure class="mr-8">
+                    <img src="./img/check.png" alt="Icon" class="w-[72px]">
+                </figure>
+                <div>
+                    <h2 class="mb-2 text-center">Registro exitoso</h2>
+                    <p class="text-center font-semibold">Tu participacion sido guardado <br class="md:block hidden"> con exito</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ever Miguel Curiel-->
+    
+    <div id="ever" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/loanding.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Próximamente</h4>
+                    <span class="tag default mb-4">Próximamente</span>
+                    <p>Próximamente
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Lorenzo Solano Martínez-->
+    <div id="lore" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/lorenzo_solano_martinez.png" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Lorenzo Solano Martínez
+                    </h4>
+                    <span class="tag default mb-4">Desarrollador</span>
+                    <p>Lorenzo Solano es un desarrollador de aplicaciones empresariales con gran experiencia en Java EE y la plataforma Java. También trabaja con .NET framework, lenguajes y tecnologías. A Lorenzo le gusta describirse como esposo, amante
+                        del aire libre y practicante de crossfit. En 2011, se le presentó formalmente la palabra Agile y Scrum con su primera certificación Certified Scrum Developer (CSD). Después de esa fecha, comenzó un viaje de autoeducación, discusiones
+                        con compañeros y otros practicantes ágiles. Con el fin de compartir, validar y aumentar su conocimiento sobre prácticas ágiles, organizó una serie de Coding Dojos en su ciudad (Santo Domingo, República Dominicana), esa serie se
+                        llamó "Kodisto Dojo" y se desarrolló desde octubre de 2012 ("Kodisto Dojo 01 ") a septiembre de 2013 ("Kodisto Dojo 11"). Mientras tanto, en su trabajo, comenzó a implementar algunas de las prácticas de XP, como la integración
+                        continua (CI), el desarrollo dirigido por pruebas (TDD), los estándares de codificación, entre otros. También introdujo un tablero Kanban para administrar algunas tareas de proyectos. En su tiempo libre, ayudó a una pequeña empresa
+                        de software llamada Wepsys SRL dándole una breve introducción a Scrum y eXtreme Programming. Además, se les presentó a los sistemas de control de versiones distribuidos (mercurial y git) junto con un Servidor de Integración Continua
+                        (C.I. Server). Después de esa experiencia, Lorenzo decidió que su principal deseo era ayudar a otras personas y organizaciones a lograr un mayor grado de excelencia mediante la introducción de prácticas ágiles. Para octubre de
+                        2012, pasó de una una gran empresa de telecomunicaciones tradicional a un pequeño ISV (NovosIT) que quería comenzar a implementar prácticas Agile, más formalmente Scrum y XP. Docente de las carreras de Ingeniería de Software e
+                        Ingeniería de Sistemas en la universidad INTEC.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Mitra Mejia-->
+    <div id="mitra" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/mitra-mejia.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Mitra Mejia</h4>
+                    <span class="tag default mb-4">Senior Software Engineer</span>
+                    <p>He sido ingeniero de software durante los últimos 8 años. Actualmente trabajo diseñando e implementando aplicaciones React y React-Native. Soy parte del equipo de ingeniería de Petal, donde ayudamos a las personas a generar crédito de manera responsable. En Petal, tuve la oportunidad de convertirme en el ingeniero clave de la plataforma de aplicaciones móviles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tatiana Montilla-->
+    <div id="tati" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/tatiana_montilla.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Tatiana Montilla</h4>
+                    <span class="tag default mb-4">Data Analyst</span>
+                    <p>«¡Datos, datos, datos!» —exclamaba con impaciencia—. «¡No puedo hacer ladrillos sin arcilla!» Sherlock Holmes Informática de profesión y Data Analyst por vocación, con experiencia en el sector público y privado. Especialista en procesos
+                        de automatización, diagramación de ETL’s. Manejo de los principales DBMS’s del mercado como PostgreSQL, MSQL Server y Oracle, especialmente en el área de estructura, diseño y consultas. Ganadora del 1er Datathon en República Dominicana
+                        en el 2020 y miembro activa de la comunidad BIGDATADO. Locutora, charlista, voluntaria, y creadora de Datacool, un podcast que busca mostrar a profesionales de distintas áreas cómo pueden aprovechar el valor de los datos para impulsar
+                        su carrera y alcanzar sus metas. Fundadora de Teclado Feo, una comunidad informática amantes de la tecnología.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sebastián Pérez-->
+    <div id="seba" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/sebastian_perez.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Sebastián Pérez</h4>
+                    <span class="tag default mb-4">Ingeniero de Software</span>
+                    <p>Soy Ingeniero de Software Egresado de UNAPEC, con 7 años de experiencia trabajando directamente con React Native directamente. Alrededor de 20 aplicaciones en producción con hasta más de 30k de usuarios activos. Soy Consultor, training
+                        y coaching a nivel de individual Contributor y para empresas locales. Soy parte de los líderes de la comunidad de React, React Native Dominicana, participamos activamente en realizar algunas conversaciones y charlas durante la
+                        semana enfocadas en que la comunidad aprenda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Wendy Cruz Feliz-->
+    <div id="wend" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/wendy_cruz_feliz.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Wendy Cruz Feliz</h4>
+                    <span class="tag default mb-4">Ingeniera en Telemática</span>
+                    <p>Wendy Cruz es egresada de Ingeniería Telemática, PUCMM STI. Cuenta con más de dos años de experiencia en el área de Seguridad de la Información, implementando regulaciones como la Ley no. 172-13, Payment Card Industry (PCI), ISO 27001
+                        e ISO 27701. Estoy capacitada como Lead Implementer de la ISO 27701 y cuento con un Diplomado en Seguridad Informática, así como distintas capacitaciones en el GDPR y la ISO 27001. Soy apasionada por la Seguridad de la información
+                        y quisiera transmitir mi conocimiento desde mi experiencia y preparaciones académicas para los ciclos de desarrollo seguro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Yhorby Matias-->
+    <div id="yhor" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/yhorby_matias.jpeg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Yhorby Matias</h4>
+                    <span class="tag default mb-4">Principal Cloud Consultant at Kloud Advocate</span>
+                    <p>Profesional con 9 años de experiencia con Licenciatura en Ciencias de la Computación (BSCS). Comencé mi carrera de TI como desarrollador back-end y trabajé durante varios años en este rol, luego hice el cambio al rol de DevOps,
+                        habiendo trabajado con aplicaciones basadas en Azure/AWS/GCP durante cinco años, he gestionado migraciones, flujos de trabajo optimizados y colaborado con equipos de ingeniería para garantizar el máximo impacto comercial, trabajando
+                        estrechamente con los miembros de mi equipo DevOps para desarrollar las mejores soluciones escalables de su clase. 
+                        <br>
+                        Logramos reducir el tiempo de implementación de la infraestructura en un 150 por ciento, diseñando pipelines de CI/CD eficientes.
+                        <br>
+                        En cuanto a mi conocimiento de herramientas y soluciones, soy competente en Datadog, Kubernetes, Azure, AWS y nubes privadas junto con cinco lenguajes de programación principales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Raldy de Jesus De Oleo-->
+    <div id="rald" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/raldy_de_jesus_de_oleo.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Raldy de Jesus De Oleo</h4>
+                    <span class="tag default mb-4">Desarrollador</span>
+                    <p>Raldy de Jesus De Oleo es desarrollador de software con más de 5 años de experiencia trabajando para grandes empresas locales desarrollando soluciones empresariales en C#. Estudié en la UASD, Santiago de los caballeros, ITLA, y una
+                        Certificación de Videojuegos, AR/VR en t-ecogroup.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Noe Branagan-->
+    <div id="noe" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/noe_branagan.jpg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Noe Branagan</h4>
+                    <span class="tag default mb-4">Team Leader</span>
+                    <p>Líder de ingeniería con más de 15 años de experiencia liderando esfuerzos de ingeniería para empresas en diferentes etapas, desde el inicio hasta la salida a bolsa. Le apasiona crear equipos de ingeniería diversos y empoderados para
+                        ofrecer excelentes productos, impulsar el impacto comercial y divertirse mientras lo hace. Actualmente CTO y cofundador de Ruffo, haciendo que las transacciones inmobiliarias transfronterizas sean simples y fáciles para todos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Juan Diego López-->
+    <div id="juan" class="modal bio-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <figure>
+                    <img src="./img/charlistas/juan_diego_lopez.jpeg" alt="Icon">
+                </figure>
+                <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                    <h4 class="mb-4">Juan Diego López</h4>
+                    <span class="tag default mb-4">Ingeniero en Sistemas y Computación</span>
+                    <p>Juan Diego López, Ingeniero de Sistemas y Computación, desarrollador de software con experiencia en desarrollo web y móvil. Actualmente trabajo en Banco Popular. Desarrollo en varios lenguajes de programación como: Java: Quarkus -
+                        Vert.x - Spring Boot, Javascript: NestJS - NodeJS - React - React Native, Go, PHP: Laravel - Symfony, entre otros…
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal conduct-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+            </div>
+            <div class="modal-body">
+                <h2 class="mb-4">Código de conducta</h2>
+                <p class="mb-6">El BarcampRD es un evento de "desconferencias" tecnológicas, cuyo contenido es auto-generado por los participantes y su orientación es hacia el desarrollo de Software y tecnología en general. Nosotros trabajamos para un evento inclusivo,
+                    con sesiones que comprenden diferentes niveles: principiante, intermedio y avanzado. Las desconferencias ofrecen una oportunidad única para interactuar con profesionales del área y la colaboración entre desarrolladores, empresas de
+                    tecnología y emprendedores. Promovemos el intercambio abierto de ideas y expresiones, pero esperamos que todos los participantes (incluidos conferencistas, patrocinadores y voluntarios) cumplan con nuestro código de conducta.</p>
+                <h3 class="mb-4">Comportamiento inaceptable</h3>
+                <p class="mb-4">Nosotros queremos que su participación en este evento sea una experiencia agradable para todos, independientemente del género, la identidad y la expresión de género, la edad, la orientación sexual, la discapacidad, la apariencia física,
+                    el tamaño del cuerpo, la raza, el origen étnico, la religión (o falta de ella) o sus preferencias tecnológicas. No toleramos el acoso de los participantes del evento de ninguna forma. El lenguaje y las imágenes de carácter sexual no
+                    son apropiados para ningún lugar del evento, incluidas charlas, talleres, fiestas, Twitter y otros medios en línea. Los participantes del evento que violen estas reglas pueden ser sancionados o expulsados del evento a discreción de
+                    los organizadores del evento.</p>
+                <p class="mb-1">El comportamiento abusivo incluye, pero no se limita a:</p>
+                <ul class=" list-disc mb-4 pl-8">
+                    <li>Comentarios verbales ofensivos o conductas discriminatorias relacionadas con el género, identidad y expresión de género, orientación sexual, discapacidad, apariencia física, tamaño corporal, edad, raza, nacionalidad, etnia o religión.</li>
+                    <li>Uso de imágenes, actividades u otro material sexual durante una presentación.</li>
+                    <li>La intimidación deliberada, el acecho o el seguimiento.</li>
+                    <li>Acosar tomando fotografía o grabación de videos.</li>
+                    <li>Interrupciones continuadas de charlas u otros eventos.</li>
+                    <li>Contacto físico inapropiado.</li>
+                    <li>Atención sexual no deseada.</li>
+                    <li>Abogar por, o alentar, cualquiera de los comportamientos anteriores.</li>
+                </ul>
+                <h3 class="mb-4">Consecuencias del comportamiento inaceptable</h3>
+                <p class="mb-4">Si un participante incurre en un comportamiento abusivo, los organizadores del evento pueden tomar cualquier acción que estimen oportuna, incluyendo advertencias a quien incurra en el acto o su expulsión del evento.</p>
+                <h3 class="mb-4">Denuncia</h3>
+                <p>Si estás sufriendo algún abuso, has sido testigo de abusos sobre otra persona, o tienes alguna otra preocupación, por favor contacta con el personal del evento inmediatamente a través del correo electrónico logistica@barcamp.org.do Esperamos
+                    que los participantes sigan estas reglas en nuestras conferencias y en los eventos relacionados.Tiene una experiencia comprobada en administración de sistemas/redes y desarrollo de proyectos de monitoreo, incluidas integraciones complejas
+                    y desarrollo de complementos en Python, PHP y PowerShell. Su experiencia se basa en las industrias de servicios minoristas, gubernamentales, de salud y de TI.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

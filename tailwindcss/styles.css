@@ -1,0 +1,131 @@
+/* Custom imports */
+@import './utilities/include-utilities.css';
+@import './components/include-components.css';
+/* Import tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  &.modal-open {
+    @apply overflow-hidden;
+  }
+}
+
+/* Section */
+
+.hero-section {
+  @apply md:pt-40 pt-24 lg:pb-28 pb-16 text-base-white md:h-[595px] flex items-center bg-[url('/img/hero-image.jpg')] bg-cover bg-center relative;
+  /* Overlay */
+  @apply before:w-full before:h-full before:absolute before:top-0 before:left-0 before:z-10 before:opacity-60 before:bg-gradient-to-r before:from-[#B123EC] before:via-[#2D0EF1] before:to-[#15EE8F];
+  
+  &::after {
+    content: '';
+    @apply w-full h-full bg-secondary-70 absolute bottom-0 z-10;
+    clip-path: polygon(0 95%, 100% 100%, 100% 100%, 0% 100%);
+  }
+}
+
+.about-us-section {
+  @apply bg-primary-50 bg-opacity-10 md:pt-[88px] pt-8 relative;
+  &::after {
+    content: '';
+    @apply w-full h-full bg-secondary-70 absolute top-0 ;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 3%);
+    @screen md {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 8%);
+    }
+  }
+
+  .counter-content {
+    @apply bg-secondary-70 w-full md:py-16 py-8 overflow-hidden;
+
+    .container {
+      @apply relative before:absolute before:bg-base-white before:md:-top-[77px] before:-top-[45px] before:left-3 before:w-6 before:h-6 before:rotate-45;
+    }
+  }
+}
+
+.events-section {
+  @apply bg-primary-10 bg-opacity-40 md:py-20 py-8;
+
+  .tabs-image-container {
+    @apply md:mt-14 mt-8;
+    .tab-content { 
+      @apply hidden lg:grid-cols-4 md:grid-cols-2 gap-8 md:overflow-auto overflow-x-scroll;
+      &.open { @apply md:grid flex; }
+    }
+  }
+}
+
+.unconferences-section {
+  @apply md:py-[88px] py-8;
+
+  .tabs-handling {
+    @apply md:overflow-auto overflow-x-scroll flex;
+    a { @apply lg:mr-20 mr-4 md:mb-14 mb-4; }
+    a:last-child { @apply mr-0; }
+  }
+}
+
+.speakers-section {
+  @apply bg-secondary-70 bg-opacity-[0.05] md:pt-16 md:pb-[90px] py-8;
+}
+
+.location-section {
+  @apply md:py-[88px] py-8;
+  iframe { @apply w-full md:h-[600px] h-80; }
+}
+
+.sponsors-section {
+  figure {
+    @apply md:mb-16 mb-4;
+    
+    img { @apply w-[180px] h-[80px] object-contain md:mx-0 mx-auto; }
+  }
+}
+
+/* Modals */
+
+.sign-in-modal {
+  .modal-content { @apply py-8 md:px-10 px-8 w-full max-w-[712px]; }
+}
+
+.confirmation-message-modal {
+  .modal-content { 
+    @apply p-12;
+
+    .modal-header { @apply absolute right-4 top-4; }
+
+    .modal-body { 
+      p { @apply font-graphie-semibold; }
+    }
+  }
+}
+
+.bio-modal {
+  .modal-content {
+    @apply lg:max-w-4xl md:max-w-2xl w-full;
+
+    .modal-header { @apply absolute right-6 top-6; }
+
+    .modal-body { 
+      @apply grid lg:grid-cols-[304px_1fr] md:grid-cols-1;
+
+      figure {
+        @apply w-full lg:h-full md:h-52 flex-none;
+        img { @apply w-full object-cover h-full object-center; }
+      }
+
+      p { @apply font-graphie-regular; }
+    }
+  }
+}
+
+.conduct-modal {
+  .modal-content {
+    @apply lg:p-[72px] p-4;
+
+    .modal-header { @apply absolute right-6 top-6; }
+  }
+}

@@ -1,0 +1,23 @@
+@layer components {
+  .form-group {
+    @apply block;
+    label { @apply text-base-white block mb-2 font-graphie-semibold; }
+    p { @apply text-neutral-50 text-caption mt-2 font-noto-sans font-normal; }
+
+    &.error p { @apply text-base-red; }
+  }
+
+  .form-control {
+    @apply w-full border border-neutral-30 bg-base-white rounded-lg px-4 py-2 placeholder:text-neutral-50 text-primary-100 font-normal text-body-2 focus:border-primary-50 focus:outline-none appearance-none;
+
+    /* Inputs size */
+    &-large { @apply h-12; }
+    &-small { @apply h-10; }
+
+    &.error { @apply border-base-red; }
+
+    @apply disabled:bg-neutral-10
+  }
+
+  textarea.form-control { @apply py-4; }
+}

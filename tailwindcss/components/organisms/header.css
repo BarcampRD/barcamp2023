@@ -1,0 +1,50 @@
+header {
+  backdrop-filter: blur(12px);
+  @apply fixed z-20 w-full lg:h-[105px] h-16 bg-primary-50 bg-opacity-20 flex items-center justify-between xl:px-24 px-4;
+
+
+  &.on-scroll { 
+    @apply bg-base-white border-b border-neutral-10;
+    figure img:first-child { @apply hidden; }
+    img:last-child  { @apply block; }
+    .main-menu.show { @apply bg-base-white border-l border-neutral-10; }
+  }
+
+  figure {
+    @apply flex-none;
+    img { @apply w-48 object-contain;}
+    img:last-child { @apply hidden; }
+  }
+  
+  .main-menu {
+    @apply flex-none lg:static absolute lg:h-auto h-screen top-16 lg:w-max w-80 right-0 lg:block hidden lg:bg-base-transparent bg-primary-50 bg-opacity-70;
+
+    ul {
+      @apply flex lg:items-center lg:flex-row flex-col lg:p-0 p-4;
+
+      li { @apply lg:mb-0 mb-2; }
+
+      li:last-child { @apply lg:ml-4 mx-auto; }
+    }
+
+    &.show { @apply block; }
+  }
+
+  .btn-icon {
+    @apply text-[2px] flex-col relative;
+
+    &:before {
+      content: "\e908";
+      font-family: 'icomoon';
+      @apply w-full text-body-2 leading-none h-0.5 absolute top-1 left-0;
+    }
+
+    &:after {
+      content: "\e908";
+      font-family: 'icomoon';
+      @apply w-full text-body-2 leading-none h-0.5 absolute bottom-4 left-0;
+    }
+
+    @screen lg { @apply hidden; }
+  }
+}

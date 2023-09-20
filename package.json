@@ -1,0 +1,29 @@
+{
+  "name": "barcamp-2.0-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss tailwindcss/styles.css -o ./css/main.css --watch",
+    "fontagon": "node js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kationinteractive/barcamp-2.0-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/kationinteractive/barcamp-2.0-html/issues"
+  },
+  "homepage": "https://bitbucket.org/kationinteractive/barcamp-2.0-html#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}

@@ -1,0 +1,8 @@
+.uncoferences-card {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  @apply w-full md:min-h-[152px] bg-base-white py-6 md:px-10 px-6 rounded-2xl grid lg:grid-cols-[144px_1fr_144px] grid-cols-1 items-center mb-10;
+
+  h4 { @apply font-bold font-graphie-bold text-primary-80 mb-2; }
+  p { @apply text-body-1 text-neutral-50 font-normal font-noto-sans; }
+  time { @apply text-heading-5-md lg:text-heading-5-lg text-neutral-80 font-semibold lg:mb-0 mb-3 font-graphie-semibold; }
+}

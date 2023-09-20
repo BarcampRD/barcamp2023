@@ -1,0 +1,5 @@
+.tab {
+  @apply lg:text-heading-5-lg text-heading-5-md font-graphie-semibold font-semibold text-neutral-50 pb-4 border-b-2 border-base-transparent hover:text-primary-50 hover:border-primary-50 flex-none cursor-pointer;
+  /* Active */
+  &.active { @apply text-primary-80 border-b-primary-80; }
+}

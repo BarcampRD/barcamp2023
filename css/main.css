@@ -2142,3 +2142,27 @@ body.modal-open{
   color: #140674;
   cursor: pointer;
 }
+
+.imgLogo {
+
+  width: 50%;
+  height: 40vh;
+  height: fit-content;
+  /* object-fit: cover; */
+  margin: 2rem;
+  margin-top: 6rem;
+  
+}
+
+@media(min-width:1080px) {
+
+  .imgLogo {
+
+    width: 50%;
+    height: fit-content; 
+    margin-top: 2rem;
+    
+    /* object-fit: cover;*/
+  }
+  
+}

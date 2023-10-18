@@ -34,13 +34,13 @@ $(document).ready(function() {
                 $('#ever').removeClass('hidden');
                 break;
             case 'speaker-1':
-                $('#lore').removeClass('hidden');
+                $('#eudris').removeClass('hidden');
                 break;
             case 'speaker-2':
-                $('#luis').removeClass('hidden');
+                $('#camacho').removeClass('hidden');
                 break;
             case 'speaker-3':
-                $('#tati').removeClass('hidden');
+                $('#freddy').removeClass('hidden');
                 break;
             case 'speaker-4':
                 $('#seba').removeClass('hidden');

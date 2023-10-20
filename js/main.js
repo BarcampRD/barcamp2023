@@ -43,7 +43,7 @@ $(document).ready(function() {
                 $('#freddy').removeClass('hidden');
                 break;
             case 'speaker-4':
-                $('#seba').removeClass('hidden');
+                $('#mitra').removeClass('hidden');
                 break;
             case 'speaker-5':
                 $('#wend').removeClass('hidden');

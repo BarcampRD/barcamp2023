@@ -16,7 +16,6 @@ http.onreadystatechange = () => {
                 const article = document.createElement("article");
                 article.classList.add("uncoferences-card")
                 article.classList.add("software")
-                article.style.position = "absolute";
                 article.innerHTML = `
                     <time>Próximamente</time>
                     <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
@@ -56,7 +55,7 @@ http.onreadystatechange = () => {
                 </figure>
                 <div class="speaker-information">
                     <h5>${item.name}</h5>
-                    <p>Hola mundo</p>
+                    <p>${item.bio_2}</p>
                     <ul class="speaker-contact">
                         <li><a><i class="icon-youtube"></i></a></li>
                         <li><a><i class="icon-twitter"></i></a></li>

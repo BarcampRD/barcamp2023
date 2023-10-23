@@ -57,7 +57,7 @@ $(document).ready(function() {
                                 </figure>
                                 <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
                                     <h4 class="mb-4">${item.name}</h4>
-                                    <span class="tag default mb-4">Ingeniero Telemático</span>
+                                    <span class="tag default mb-4">${item.carrear}</span>
                                     <p>${item.bio}</p>
                                 </div>
                             </div>
@@ -159,11 +159,11 @@ $(document).ready(function() {
         $('.tabs-image-container .tab-content').not(target).removeClass('open');
     });
 
-    var $filter = $('.tab-unconferences-container').isotope({
-        // options
-        itemSelector: '.uncoferences-card',
-        layoutMode: 'fitRows'
-    });
+    // var $filter = $('.tab-unconferences-container').isotope({
+    //     // options
+    //     itemSelector: '.uncoferences-card',
+    //     layoutMode: 'fitRows'
+    // });
 
     $('.tabs-handling').on('click', 'a', function() {
         var filterValue = $(this).attr('data-filter');

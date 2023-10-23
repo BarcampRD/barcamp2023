@@ -1,5 +1,7 @@
 
 const container = document.getElementById("unconferences-container");
+const containerSpeaker = document.getElementById("speakerCardSection");
+
 
 const http = new XMLHttpRequest();
 
@@ -43,11 +45,39 @@ http.onreadystatechange = () => {
                 container.appendChild(article)
             }
         });
+        datos.forEach(item => {
+            if (item.state == "accepted") {
+                const speaker = document.createElement("div");
+                speaker.classList.add("speaker-card");
+                speaker.id=`speaker-${item.name.replace(/\s/g, "")}`
+                speaker.innerHTML = `
+                <figure class="speaker-image">
+                    <img src="${item.avatar}" alt="Dulce">
+                </figure>
+                <div class="speaker-information">
+                    <h5>${item.name}</h5>
+                    <p>Hola mundo</p>
+                    <ul class="speaker-contact">
+                        <li><a><i class="icon-youtube"></i></a></li>
+                        <li><a><i class="icon-twitter"></i></a></li>
+                        <li><a><i class="icon-github"></i></a></li>
+                    </ul>
+                </div>
+                `;
+
+                // Almacena el contenedor de etiquetas creado en esta iteración
+                containerSpeaker.appendChild(speaker)
+            }
+        });
     }
 }
+
+
+
+
 
 http.open('get', '../data/charlistas.json', true);
 
 http.send();
-
 console.log(http);
+

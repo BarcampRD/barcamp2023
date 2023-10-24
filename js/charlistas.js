@@ -1,4 +1,3 @@
-
 const container = document.getElementById("unconferences-container");
 const containerSpeaker = document.getElementById("speakerCardSection");
 const containerSpeakerHidden = document.getElementById("speakerCardDisplay");
@@ -29,11 +28,8 @@ http.onreadystatechange = () => {
                         <a class="btn btn-outline-primary btn-large">Sala #</a>
                     </div>
                 `;
-
-                // Almacena el contenedor de etiquetas creado en esta iteración
                 containerTags = article.querySelector("#container-tags");
 
-                // Agregar etiquetas dinámicamente
                 item.tags.forEach(tag => {
                     const tagElement = document.createElement("span");
                     tagElement.classList.add("tag", "software");
@@ -71,7 +67,6 @@ http.onreadystatechange = () => {
         datos.forEach(item => {
     
                 const speaker = document.createElement("div");
-                //speaker.classList.add("modal bio-modal");
                 speaker.className = "modal bio-modal hidden";
                 speaker.id = `${item.name.replace(/\s/g, "")}`;
                 speaker.innerHTML = `
@@ -102,13 +97,11 @@ http.onreadystatechange = () => {
 }
 
 
-
-
-
 http.open('get', '../data/charlistas.json', false);
 
 http.send();
-console.log(http);
+
+
 
 
 

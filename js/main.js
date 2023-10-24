@@ -85,12 +85,6 @@ $(document).ready(function() {
         $('.tabs-image-container .tab-content').not(target).removeClass('open');
     });
 
-    // var $filter = $('.tab-unconferences-container').isotope({
-    //     // options
-    //     itemSelector: '.uncoferences-card',
-    //     layoutMode: 'fitRows'
-    // });
-
     $('.tabs-handling').on('click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
         $filter.isotope({ filter: filterValue });

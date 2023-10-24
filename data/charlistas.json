@@ -114,7 +114,7 @@
     {
         "name": "Cirilo Bidó",
         "email": "ciriloenmanuel@gmail.com",
-        "avatar": "https://secure.gravatar.com/avatar/83bbcddb1a355184b9ecf8462242fd6a?s=500",
+        "avatar": "../img/charlistas/cirilo.jpeg",
         "location": "Unknown",
         "bio": "Soy desarrollador móvil desde 2018, he dedicado mi carrera al desarrollando aplicaciones y proyectos tanto personales como profesionalmente para empresas.\r\n\r\nApasionadamente he aprendido y mejorado mis habilidades como desarrollador a lo largo de todo este tiempo, obteniendo como resultado la satisfacción de ver las aplicaciones que he desarrollado triunfar en Google Play Store y ser de utilidad para mis clientes.\r\n\r\nActualmente estoy incursionando en la creación de contenido con el fin de poder ayudar a hacer crecer la comunidad de desarrolladores Android en República Dominicana y en la zona donde resido actualmente.",
         "twitter": "cirilobido",
@@ -156,7 +156,7 @@
     {
         "name": "Juan Thomas Angel Montilla",
         "email": "juan.thomas.angel@gmail.com",
-        "avatar": "https://secure.gravatar.com/avatar/0b1b4efd461bcc7bd28150ce9f85cfa7?s=500",
+        "avatar": "../img/charlistas/juan.jpeg",
         "location": "Unknown",
         "bio": "Soy un desarrollador web especializado Full Stack en Spring Boot, Quarkus, Angular y Loopback JS. Aún así siempre estoy probando nuevas tecnologías y me adapto fácilmente al cambio de estas, debido a que soy consciente que lo que importa no es la herramienta, si no los conceptos. Fuí parte del Comité de Estudiantes de Ingeniería en Sistema, dónde participe en la organización de eventos como el Barcamp, el JConf y el Torneo de Desarrollo de Vídeo Juegos.",
         "twitter": "",
@@ -195,7 +195,7 @@
     {
         "name": "Jonathan Morales Baez",
         "email": "jemorales05@gmail.com",
-        "avatar": "https://secure.gravatar.com/avatar/4e908564d32612eaa5b0a38ddfca4ef1?s=500",
+        "avatar": "../img/charlistas/jonathan.jpeg",
         "location": "Unknown",
         "bio": "Ingeniero en Sistemas, Maestría en Alta Gerencia mención Finanzas del Instituto tecnológico de Santo domingo (INTEC).\r\n\r\nProfesional con 20 años de experiencia en: adopción de marcos de mejores prácticas a nivel mundial como lo son ITIL, ISO/IEC20000, ISO/IEC27001, COBIT, PMBOK, entre otros que persiguen alcanzar la eficiencia operacional de los procesos de TI de manera transversal con el Negocio. \r\n\r\nMe apasiona compartir el conocimiento, aprender, optimizar procesos, pensar nuevas maneras de hacer las cosas. Me enorgullece ver las mejoras dramáticas que una organización puede hacer al abordar sus problemas de personas, procesos y tecnología. \r\n\r\nEstoy \"enganchado\" a ayudar a las organizaciones a mejorar su forma de trabajar, innovar y atender a sus clientes / usuarios por eso colaboro como parte de la comunidad de ITSM RD.",
         "twitter": "jemorales05",
@@ -282,7 +282,7 @@
     {
         "name": "Emely García ",
         "email": "emelyga12@hotmail.com",
-        "avatar": "https://secure.gravatar.com/avatar/a11b6859e2e93bec1f6f9cf1735041a8?s=500",
+        "avatar": "../img/charlistas/emely.jpeg",
         "location": "Unknown",
         "bio": "Emely García, creadora y Presidenta del Observatorio DATALAWRD.\r\n\r\nLicenciada en Derecho de la Pontificia Universidad Católica Madre y Maestra (PUCMM), 2014, y Magister en Big Data and Business Intelligence de la Escuela Next International Business School (NEXT IBS) y Universidad de Zaragoza, España 2016.\r\n\r\nHa realizado sendos estudios en casas de estudios nacionales e internacionales en torno a los temas de Administración Pública, Hacienda Pública, Ética Pública, Protección de Datos Personales, Acceso a la Información Pública, y Gobernanza de Internet.\r\n\r\nHa sido servidora pública desde el 2017 hasta la actualidad, desempeñándose en diversas posiciones como abogada, analista de Protección de Datos Personales, analista de Transparencia, encargada de la División de OAI y seguimiento a los Portales de Transparencia,  encargada de Oficina de Acceso a la Información Pública (OAI), y asesora jurídica. \r\n\r\nEn su ejercicio se destaca:\r\n\r\nPasantía en la Secretaria de Protección de Datos del Instituto Nacional de Acceso a la Información y Protección de Datos Personales (INAI), México 2018.\r\n\r\nRepresentación de la República Dominicana en el XVII Encuentro de la Red de Transparencia y Acceso a la Información Pública (RTA), Brasil 2019; y en el XVIII Encuentro de la Red de Transparencia y Acceso a la Información Pública (RTA), México 2019.\r\n\r\nMiembro de la Comisión Redactora del borrador de anteproyecto de Ley sobre Protección de Datos, liderado por el Ministerio de la Presidencia (MINPRE), 2019-2020.\r\n\r\nExpositora en seminarios nacionales e internacionales sobre los temas en cuestión; y autora de variados artículos publicados en periódicos nacionales, así como plataformas digitales de renombre internacionales.\r\n\r\nPublicación de análisis jurídico a la normativa dominicana sobre Protección de Datos en la Red Iberoamericana de Protección de Datos (RIPD).",
         "twitter": "datalawrd15",
@@ -367,7 +367,7 @@
     {
         "name": "Brayan Muñoz V.",
         "email": "BrayanMnz@hotmail.com",
-        "avatar": "https://secure.gravatar.com/avatar/962f3144057c9b73604ed9c065876931?s=500",
+        "avatar": "../img/charlistas/brayan.png",
         "location": "Unknown",
         "bio": "Ingeniero en Telemática graduado de PUCMM, actualmente persiguiendo una Maestría en Ciencia de Datos en UCJC. Desarrollador de software con aproximadamente 4 años de experiencia trabajando de forma remota desde la República Dominicana en proyectos con arquitecturas monolíticas y microservicios, incluyendo alrededor de 1 año de experiencia en proyectos de análisis de datos. Miembro asociado del JCP. Miembro de la junta directiva del Grupo de Usuarios de Java de la República Dominicana, JavaDominicano, y entusiasta del código abierto con contribuciones a proyectos populares como JHipster",
         "twitter": "",
@@ -447,7 +447,7 @@
         "email": "remildejesus@gmail.com",
         "avatar": "../img/charlistas/carlos_camacho.jpg",
         "location": "Unknown",
-        "bio": "Carlos Camacho\r\nco-presenters - Ruddy Gabriel\r\nco-presenters - Naoki Nakao",
+        "bio": "Más de 11 años de experiencia en desarrollo de software bajo la plataforma Java, implementación de proyectos de código libre y desarrollo e integración de proyectos embedidos en Arduino y Raspberry Pie. Graduado de Ingeniería Telemática, Master en Tecnología Educativa. Profesor de las carreras de Ingeniería de Sistemas y Computación e Ingeniería Telemática de la PUCMM. Actualmente es el Director de la escuela de Ingeniería en Computación y Telecomunicaciones Campus Santiago PUCMM. Miembro de la Fundación Código Libre y Cofundador de Java User Group, Java Dominicano.",
         "twitter": "",
         "carrear": "Ingeniero de Sistemas",
         "url": "https://github.com/eict-pucmm",

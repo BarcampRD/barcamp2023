@@ -1,7 +1,7 @@
 
 const container = document.getElementById("unconferences-container");
 const containerSpeaker = document.getElementById("speakerCardSection");
-
+const containerSpeakerHidden = document.getElementById("speakerCardDisplay");
 
 const http = new XMLHttpRequest();
 
@@ -64,10 +64,40 @@ http.onreadystatechange = () => {
                 </div>
                 `;
 
-                // Almacena el contenedor de etiquetas creado en esta iteración
                 containerSpeaker.appendChild(speaker)
             }
         });
+
+        datos.forEach(item => {
+    
+                const speaker = document.createElement("div");
+                //speaker.classList.add("modal bio-modal");
+                speaker.className = "modal bio-modal hidden";
+                speaker.id = `${item.name.replace(/\s/g, "")}`;
+                speaker.innerHTML = `
+                
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="javascript:;" class="btn-icon btn-solid-secondary btn-xsmall close-modal"><i class="icon-close"></i></a>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img src="${item.avatar}" alt="Icon">
+                        </figure>
+                        <div class="md:px-12 lg:py-[72px] md:py-12 p-8">
+                            <h4 class="mb-4">${item.name}</h4>
+                            <span class="tag default mb-4">${item.carrear}</span>
+                            <p>${item.bio}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                `;
+                containerSpeakerHidden.appendChild(speaker)
+            
+            
+        });
+
     }
 }
 
@@ -75,8 +105,10 @@ http.onreadystatechange = () => {
 
 
 
-http.open('get', '../data/charlistas.json', true);
+http.open('get', '../data/charlistas.json', false);
 
 http.send();
 console.log(http);
+
+
 

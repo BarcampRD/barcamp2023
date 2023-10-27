@@ -2166,3 +2166,9 @@ body.modal-open{
   }
   
 }
+
+@media (max-width: 767px) { /* Este es un ancho típico para pantallas de celulares */
+  .imgLogo {
+    display: none; /* Esto ocultará el elemento en pantallas de celular */
+  }
+}

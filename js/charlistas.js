@@ -16,7 +16,7 @@ http.onreadystatechange = () => {
                 article.classList.add("uncoferences-card")
                 article.classList.add("software")
                 article.innerHTML = `
-                    <time>Próximamente</time>
+                    <time>${item.hora}</time>
                     <div class="lg:px-8 lg:border-r lg:border-l border-primary-10">
                         <h4>${item.title}</h4>
                         <div id="container-tags" class="flex mb-2 flex-wrap gap-2">
@@ -25,7 +25,7 @@ http.onreadystatechange = () => {
                         <p>${item.abstract}</p>
                     </div>
                     <div class="lg:pl-8 lg:mt-0 mt-4">
-                        <a class="btn btn-outline-primary btn-large">Sala #</a>
+                        <a class="btn btn-outline-primary btn-large">${item.sala}</a>
                     </div>
                 `;
                 containerTags = article.querySelector("#container-tags");

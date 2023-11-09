@@ -25,7 +25,7 @@ http.onreadystatechange = () => {
                         <p>${item.abstract}</p>
                     </div>
                     <div class="lg:pl-8 lg:mt-0 mt-4">
-                        <a class="btn btn-outline-primary btn-large">${item.sala}</a>
+                        <a class="btn btn-outline-primary btn-sala">${item.sala}</a>
                     </div>
                 `;
                 containerTags = article.querySelector("#container-tags");

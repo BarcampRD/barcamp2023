@@ -2172,3 +2172,9 @@ body.modal-open{
     display: none; /* Esto ocultará el elemento en pantallas de celular */
   }
 }
+
+.btn-sala {
+  border-radius: 15px;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}

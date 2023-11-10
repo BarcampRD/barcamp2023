@@ -495,7 +495,7 @@
         "abstract": "El workshop consiste en una combinación teórico-práctica en donde se discutiran los conceptos básicos del análisis espacial (representaciones de los datos, formatos, y sistemas de coordenadas) y se utilizará Python para demostrar como manipular, analizar y visualizar datos espaciales de Rep. Dom.",
         "additional_info": "En el taller se utilizará Python y google collab (como alternativa pueden utilizar jupyter notebooks). Las librerías requeridas en Python son numpy, pandas, y geopandas. Necesito un adaptador HDMI para mi computadora. Puedo presentar en el horario de la tarde.",
         "audience_level": "Intermediate",
-        "avatar": "https://secure.gravatar.com/avatar/48a80e90b8cba9eea01803c59f157e1c?s=500",
+        "avatar": "../img/charlistas/fernando.jpg",
         "avatar_2": null,
         "bio": "Profesional con 4 años de experiencia enfocado en el área de Inteligencia de Negocios (BI) y Ciencia de Datos. Implementa técnicas de inteligencia artificial en diversos lenguajes de programación (R y Python) para identificar patrones. Comunica resultados en Tableau y PowerBI.",
         "bio_2": "Economista y Científico de Datos",
